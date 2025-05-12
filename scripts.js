@@ -70,33 +70,17 @@
 
 // 5. Number Guessing Game
 // This program implements a simple number guessing game with a fixed secret number.
-// javascript
 
-// // Function for number guessing game
-// function numberGuessingGame() {
-//     // Set a secret number (you can change this)
-//     let secretNumber = 42;
+    let hiddenNumber = 55;
 
-//     // Get guess from user using prompt
-//     let guess = prompt("Guess the secret number (between 1 and 100):");
+    let guess = parseInt(prompt("Guess the hidden number (between 1 and 100):"));
 
-//     // Convert input to number and check if it's valid
-//     guess = Number(guess);
-//     if (isNaN(guess) || guess < 1 || guess > 100) {
-//         alert("Please enter a valid number between 1 and 100!");
-//         return;
-//  haut   }
+    if (guess === hiddenNumber) {
+        alert("Correct! You guessed the hidden number!");
+    } else if (guess > hiddenNumber) {
+        alert("Too high! Try a lower number.");
+    } else {
+        alert("Too low! Try a higher number.");
+    }
 
-//     // Compare guess with secret number
-//     if (guess === secretNumber) {
-//         alert("Correct! You guessed the secret number!");
-//     } else if (guess > secretNumber) {
-//         alert("Too high! Try a lower number.");
-//     } else {
-//         alert("Too low! Try a higher number.");
-//     }
-// }
-
-// // Run the program
-// numberGuessingGame();
 

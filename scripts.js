@@ -1,11 +1,11 @@
 // 1. Ticket Price Calculator
 // //This program calculates the ticket price based on the user's age with the given conditions.
-// //javascript
 
 
-    let age = parseInt(prompt("Please enter your age:"));
- 
+    const age = parseInt(prompt("Please enter your age:"));
+ 5667
     let price;
+
     if (age < 12) {
         price = 5;
     } else if (age < 18) {
@@ -20,30 +20,15 @@
 
 
 // 2. Leap Year Checker
-// This program checks if a given year is a leap year.
-// javascript
+// // This program checks if a given year is a leap year.
 
-// // Function to check if a year is a leap year
-// function isLeapYear() {
-//     // Get year from user using prompt
-//     let year = prompt("Please enter a year:");
+    const year = parseInt(prompt("Please enter a year:"));
 
-//     // Convert input to number and check if it's valid
-//     year = Number(year);
-//     if (isNaN(year) || year < 0) {
-//         alert("Please enter a valid year!");
-//         return;
-//     }
+    const isLeap = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
 
-//     // Check leap year condition
-//     let isLeap = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+    alert(`${year} is ${isLeap ? "a leap year!" : "not a leap year."}`);
 
-//     // Display the result
-//     alert(`${year} is ${isLeap ? "a leap year!" : "not a leap year."}`);
-// }
 
-// // Run the program
-// isLeapYear();
 
 // 3. Discount Calculator
 // This program calculates a discount based on the purchase amount.

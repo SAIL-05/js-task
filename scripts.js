@@ -52,14 +52,10 @@
 
 // 4. Time-Based Greeting
 // This program greets the user based on the current time of day.
-// javascript
 
-// Function to greet user based on time of day
-function greetByTime() {
-    // Get current hour
+
     let hour = new Date().getHours();
 
-    // Determine greeting based on hour
     let greeting;
     if (hour >= 5 && hour < 12) {
         greeting = "Good morning!";
@@ -69,12 +65,8 @@ function greetByTime() {
         greeting = "Good evening!";
     }
 
-    // Display the greeting
     alert(greeting);
-}
 
-// Run the program
-greetByTime();
 
 // 5. Number Guessing Game
 // This program implements a simple number guessing game with a fixed secret number.

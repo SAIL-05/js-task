@@ -32,10 +32,10 @@ const movieContainer = document.querySelector("#movie-list");
     movieContainer.innerHTML = movieResults.map(movie => {
       return `<div class="movie">
       <img src="https://image.tmdb.org/t/p/w185${movie.poster_path}?api_key=1ef33d0988889fd4f6c374211d20e38c" alt ="${movie.title}">
-      <h3>${movie.title}</h3>;
+      <h3>${movie.title}</h3>
       </div>
       `
-    })
+    }).join("");
 
  
 

@@ -37,21 +37,7 @@ const movieContainer = document.querySelector("#movie-list");
       `
     })
 
-  //   for (let i = 0; i < movieResults.length; i++) {
-  //     let newDiv = document.createElement("div");
-  //     let newImg = document.createElement("img");
-  //     newImg.src = `https://image.tmdb.org/t/p/w185${movieResults[i].poster_path}?api_key=1ef33d0988889fd4f6c374211d20e38c`;
-  //     newImg.alt = movieResults[i].title;
-
-  //     let newText = document.createElement("h3");
-
-  //     newText.textContent = movieResults[i].title;
-
-  //     newDiv.appendChild(newImg);
-  //     newDiv.appendChild(newText);
-
-  //     movieContainer.appendChild(newDiv);
-  //   }
+ 
 
 
   } catch (err) {

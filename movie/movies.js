@@ -25,6 +25,14 @@ const movieContainer = document.querySelector("#movie-list");
     <img src="https://image.tmdb.org/t/p/w185${movieResults[7].poster_path}?api_key=1ef33d0988889fd4f6c374211d20e38c" alt="${movieResults[7].title}">
     <h3>${movieResults[7].title}</h3>
     </div>
+    <div>
+    <img src="https://image.tmdb.org/t/p/w185${movieResults[12].poster_path}?api_key=1ef33d0988889fd4f6c374211d20e38c" alt="${movieResults[12].title}">
+    <h3>${movieResults[12].title}</h3>
+    </div>
+    <div>
+    <img src="https://image.tmdb.org/t/p/w185${movieResults[17].poster_path}?api_key=1ef33d0988889fd4f6c374211d20e38c" alt="${movieResults[17].title}">
+    <h3>${movieResults[17].title}</h3>
+    </div>
     `
 
 

@@ -1,20 +1,9 @@
-// console.log(document.getElementById('input-box'))
+const inputBox = document.querySelector('#input-box');
+const addTask = document.querySelector('#btn');
+const taskList = document.querySelector('#tasklist');
 
 function AddNewTask() {
-    let inputBox = document.getElementById('input-box');
-    let newlyCreatedElement = document.createElement('li');
-
-
-    newlyCreatedElement.textContent = inputBox.value;
-    document.getElementById('tasklist').appendChild(newlyCreatedElement);
-
-
+    taskList.innerHTML += `<li>${inputBox.value}</li>`;
 }
 
-// function SendNewMessage() {
-//     let userInput = document.getElementById('text-message')
-//     let newChat = document.createElement('p');
-
-//     newChat.textContent = userInput.value;
-//     document.getElementById('chat-app').appendChild(newChat)
-// }
+addTask.addEventListener("click", AddNewTask);

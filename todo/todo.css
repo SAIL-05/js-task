@@ -1,0 +1,39 @@
+body {
+    background: black;
+}
+
+p {
+    color: white;
+}
+
+.todo {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-function{
+    width: 60%;
+    height: 70vh;
+    background: white;
+    padding: 30px;
+}
+
+#input-box {
+    width: 100%;
+    height: 5rem;
+    background: yellow;
+    color: black;
+}
+
+button {
+    background: green;
+    color: black;
+    padding: 15px 30px;
+}
+
+li.checked {
+    color: red;
+    text-decoration: line-through;
+}
